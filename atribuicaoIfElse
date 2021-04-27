@@ -1,0 +1,19 @@
+/**
+ * 
+ * função principal  (if/else)
+ * Atribuição
+ */
+
+fun main() {
+val maxVolue= if (a>b) a else if(a<b)b else b
+    
+    val minValue = if (a>b){
+        
+       println("b ($b) é o menor valor")
+    } else if (a<b){
+        
+         println("a ($a) é o menor valor")
+    } else {
+         println("os valores são iguais")
+    }
+}
