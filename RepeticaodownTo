@@ -5,7 +5,7 @@ fun main(){
 }
 
 fun downTo(){
-   for( i in 20 downTo 0){ // DownTo não funciona se aplicado ja em desordem
+   for( i in 20 downTo 0){ // DownTo não funciona se aplicado em ordem crescente (0..20)
       println("$i ")
    }
 }
