@@ -1,0 +1,12 @@
+/**
+ * 
+ * Concanetação
+ */
+
+fun main() {
+val b ="Bem-vinda(o)"
+    var n ="Paula"
+    //val não pode ser alterada, var pode sofrer incrementação
+    println("$b, ${n.capitalize()}")
+
+}
