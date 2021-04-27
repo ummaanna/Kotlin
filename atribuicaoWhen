@@ -1,0 +1,23 @@
+/*
+ * 
+ * When */
+ 
+ fun main(){
+     // when usando somente expressões
+     when {
+         a>b->{}
+         a != b && a>c {}
+         b==0 ->{}
+         else ->{} // todos precisam de um else
+         
+     }
+     // when usado 
+     // // não pode fazer o comparativo bolean com int e vice versa
+     when (year){
+         -4000..475 -> // antiguidade (repare que aceita o range(..)
+         476..1452-> // mediaeval
+         1453..1789// moderna 
+         currentYear -> // ano atual
+     }
+ }
+     
