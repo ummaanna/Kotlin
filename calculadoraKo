@@ -1,0 +1,21 @@
+/**
+ * Função Principal
+ * calculadora
+ */
+fun main(){
+   step(2) // colocar o valor de  n
+}
+
+
+
+fun step(n:Int){
+    for (i in 0..11){ // step conta o passo que a contagem será feita (n)
+        println("$i x $n = " + (i*n)) 
+    }
+}
+
+
+
+
+
+ 
