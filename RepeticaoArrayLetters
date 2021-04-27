@@ -1,0 +1,25 @@
+ /**
+ * Função Principal
+ * 
+ */
+fun main(){
+   letters()
+}
+
+
+
+fun letters(){
+    val sArray = "Look this string"
+    for(l in sArray){
+        // pega o tamanho do array e pega cada posição do array
+        // l[index]
+        print(l.toUpperCase() + " ") 
+        
+    }
+}
+
+
+
+
+
+ 
