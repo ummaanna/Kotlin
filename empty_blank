@@ -1,0 +1,19 @@
+/**
+ * 
+ * empty e blank
+ */
+
+fun main() {
+val empty = "" // nenhum espaço
+val blank = "     "// espaços 
+    
+    println(empty.length) // tamanho de empty = em branco
+    println(blank.length) // blank 5 (5espaços vazios) = em branco
+    
+   // println(empty.isEmpty() && empty.isBlank()) // a string esta tanto vazia quanto em branco
+	println(blank.isEmpty() || blank.isBlank()) // não esta fazia mais esta em branco 
+    
+    /*
+     * empty-> vazio e em branco ""
+     * blank-> em branco, mas não vazio "    "*/
+}
