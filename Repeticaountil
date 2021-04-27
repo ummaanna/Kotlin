@@ -1,0 +1,16 @@
+/**
+ * Função Principal
+ * 
+ */
+fun main(){
+   until()
+}
+
+
+fun until(){
+    for(i in 0 until 20){
+      println("$i ") // ele para um numero antes do valor solicitado, ou seja, para no 19
+      // ele entende como i<20
+    }
+    
+}
