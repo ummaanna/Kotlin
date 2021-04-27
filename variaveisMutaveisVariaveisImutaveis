@@ -1,0 +1,17 @@
+fun main(){
+    
+
+    // variáveis mutáveis
+// são as variáveis uma vez declaradas pode ser alteradas
+    var  nome = "Lara"
+nome = "Lara Lima"
+    // variáveis imutáveis
+    // são as variáveis uma vez iniciadas, não se alteram nunca mais
+
+    val v = 7625
+    val x: Int
+    x= 20
+
+    println(nome)
+
+}
