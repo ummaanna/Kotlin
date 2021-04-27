@@ -21,3 +21,12 @@
      }
  }
      
+     
+     fun main(){
+
+ var x:Int? = 8
+ var w:Int? =null
+ var t:String?  = x?.getStudentStatus()
+    
+    println(t)
+}
