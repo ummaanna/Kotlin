@@ -1,0 +1,11 @@
+// utilizando o downTO
+
+fun main(){
+    downTo()
+}
+
+fun downTo(){
+   for( i in 20 downTo 0){ // DownTo não funciona se aplicado ja em desordem
+      println("$i ")
+   }
+}
