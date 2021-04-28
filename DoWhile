@@ -1,0 +1,13 @@
+fun main() {
+
+
+    var l: Int =10
+    //faça
+   do{
+
+        println(l)
+       l+=5
+   }while (l<=100) // enquanto for verdadeira
+
+
+}
