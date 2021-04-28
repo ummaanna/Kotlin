@@ -1,0 +1,17 @@
+//Funções em uma unica linha 
+
+fun main() {
+
+ 
+
+    println(somas(a=2,b=3))
+}
+
+// Função com return
+fun soma(a: Int, b: Int): Int {
+
+    return a+b
+}
+
+// função soma simplicada
+fun somas(a: Int, b: Int) = a+b
