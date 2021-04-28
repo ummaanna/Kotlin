@@ -1,0 +1,28 @@
+fun main() {
+//Principal
+
+    //Udando If e Else com return e função
+
+    println(calculandoBonus("Coordenador", 1000f))
+    println(calculandoBonus("Gerente Junior", 1000f))
+    println(calculandoBonus("Gerente Senior", 1000f))
+}
+
+// Função
+fun calculandoBonus(cargo: String, salario: Float) : Float {
+
+
+        val bonus: Float
+    if (cargo == "Coordenador") {
+        bonus = salario * 0.2f
+
+    } else if(cargo == "Gerente Junior"){
+        bonus =salario * 0.5f
+
+    } else{
+        bonus = salario +2
+
+    }
+
+        return bonus
+    }
