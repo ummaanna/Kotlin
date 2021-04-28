@@ -1,0 +1,19 @@
+fun main(){
+   
+    val frase= " Kotlin é uma linguagem"
+    val caracteristica = "show "
+
+ println("Kotlin é uma  linguagem ${caracteristica.length}")
+                            // informa o tamanho da strinh
+                        // usar ${} indica um codígo
+
+    val str = """ kaakka
+        jajjakkkakkakkaka
+        kajakakakakaka
+        kakaakkakkakkaka
+        
+""" // quebra de linha para string
+    println(str)
+
+
+}
