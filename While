@@ -1,0 +1,13 @@
+fun main(){
+
+    var index: Int =0
+
+    while(index <100){ // enquanto  index for menor que 100
+
+        println(index) // conta até 99
+        index ++ // vai contando até chegar  a 100
+            if (index ==50){ // caso queira parar meu cod ao chegar no 50
+                break // para while e for
+            }
+    }
+}
