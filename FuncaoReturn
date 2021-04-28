@@ -1,0 +1,9 @@
+fun main() {
+    
+println(hello("Lara"))
+}
+// para o nome retornar
+fun hello( n: String ) : String{
+ return  "Olá, $n"
+
+}
