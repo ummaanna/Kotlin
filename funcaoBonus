@@ -1,0 +1,22 @@
+fun main(){
+
+
+    val a = 10
+    val b = 20
+    val c = 30
+
+        calculandoBonus(a,b,c)
+
+    calculandoBonus(a,b,c)
+    calculandoBonus(a,b,c)
+    calculandoBonus(a,b,c)
+    calculandoBonus(a,b,c)
+
+
+
+}
+// criando funcao
+fun calculandoBonus(a: Int, b: Int, c:Int){
+ println(" O bônus é: ${a+(((b*c)*2))}")
+
+}
