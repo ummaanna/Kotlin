@@ -1,0 +1,21 @@
+fun main() {
+   /* val n1: Double = Double.MAX_VALUE
+    val b1: Byte = 100
+    println(b1)
+
+    println(b1.toShort())
+    println(b1.toLong())
+    println(b1.toFloat())
+    println(b1.toDouble())
+
+// covertendo string para os metodos acima
+
+
+    println("19".toShort()) // compativel
+    println("19".toLong()) // compativel
+    println("19".toFloat()) // compativel */
+
+    println("jahd".toInt()) // erro
+
+
+}
