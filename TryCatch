@@ -1,0 +1,18 @@
+fun main() {
+
+    // execessão try catch
+
+    try {
+        println("jahd".toInt())
+    } catch (e: NumberFormatException) { // se vc sabe o motivo explicito do erro
+        println("Esse valor não é um número!") // nao pode ser convetido em int = não é compativo
+// o catch mais especifico fica em cima, pois, mesmo sendo mencionado, o cod ira pegar o mais generico se estiver primeiro
+    }catch (e: Exception) { // quando o erro ainda é desconhecido = exessão genericas
+        println(" Algo deu errado..." )
+    } finally { // sempre executa quando um erro acontece, ou quando ele não acontece
+        //bom lugar para colocar um cod para fechar o programa
+        println("kshdkdk")
+        println("kshdkdk")
+    }
+
+}
