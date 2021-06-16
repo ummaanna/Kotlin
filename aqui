@@ -1,93 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorIvalido">
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+
+
 
     <TextView
-        android:id="@+id/txt_novo_talhao"
+        android:id="@+id/cultivar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/string_novo_talhao"
-        android:textAlignment="center"
-        android:textColor="@color/purple_500"
-        android:textSize="35sp"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:gravity="center"
+        android:text="Cultivar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="72dp"
-        android:contentDescription="@string/text_descricao"
-        android:src="@drawable/ic_image"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txt_novo_talhao" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_layout_latitude"
-        style="@style/MyTextInputLayout"
-        app:layout_constraintBottom_toTopOf="@+id/text_layout_longitude"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_view">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_latitude"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/latitude" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_layout_longitude"
-        style="@style/MyTextInputLayout"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_layout_latitude">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_longitude"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/longitude" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <TextView
-        android:id="@+id/cultura_talhao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/culutura_do_talhao"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_layout_longitude" />
-
-    <Spinner
-        android:id="@+id/spinner_talhao"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
-       android:entries="@array/spinner_values"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:padding="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/text_layout_longitude"
-        app:layout_constraintLeft_toRightOf="@id/cultura_talhao"
+        app:layout_constraintTop_toTopOf="parent"
        />
 
 
+    <View
+        android:id="@+id/view_01"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cultivar"
+        />
+
+
+    <LinearLayout
+        style="@style/MyTextInputLayout"
+        android:id="@+id/layout_01"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cultivar">
+
+        <EditText
+            android:id="@+id/edit_cultivar"
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/view_01"
+            android:hint="Cultivar:" />
+
+        <EditText
+            android:id="@+id/edit_stand"
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/edit_cultivar"
+            android:hint="Stand:" />
+
+        <EditText
+            android:id="@+id/edit_area"
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/edit_stand"
+            android:hint="Área (%):" />
+
+        <EditText
+            android:id="@+id/edit_espacamento"
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/edit_area"
+            android:hint="Espaçamento:" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_02"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_01"
+        />
+
+
+    <TextView
+        android:id="@+id/text_tecnologia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tecnologia"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_02"
+
+        />
+
+    <Spinner
+        
+        android:id="@+id/spinner_tecnologia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:entries="@array/spinner_tecnologia"
+        android:padding="15dp"
+
+        app:layout_constraintTop_toBottomOf="@id/text_tecnologia"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_tecnologia"
+        android:gravity="center"
+        android:layout_marginTop="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Salvar Alterações"
+        app:layout_constraintRight_toRightOf="parent"/>
+    
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+ <string-array name="spinner_tecnologia">
+        <item>Selecione uma opção</item>
+        <item>Tecnologia 1</item>
+        <item>Tecnologia 2</item>
+        <item>Tecnologia 3</item>
+    </string-array>
+
+
