@@ -1,0 +1,28 @@
+<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_latitude"
+        style="@style/MyTextInputLayout"
+        app:layout_constraintBottom_toTopOf="@+id/text_layout_longitude"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/latitude" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_longitude"
+        style="@style/MyTextInputLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_layout_latitude">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/longitude" />
+    </com.google.android.material.textfield.TextInputLayout>
